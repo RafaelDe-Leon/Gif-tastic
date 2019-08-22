@@ -14,18 +14,29 @@
 <body>
     <div class="container">
 
-        <div class="create-button">
+        <div id="create-button"></div>
+        <!-- this form is where the user will input stuff about the data to search -->
+        <form id="gif-form">
 
+            <label for="gif-input"> Click to Add Gif</label>
+            <input type="text" id="gif-input"><br>
 
-        </div>
+            <!-- This button will trigger our AJAX call -->
+            <input id="find-gif" type="submit" value="Gif Search">
 
+        </form>
+
+        <!-- We will dump our JSON content here -->
+
+        <div id="gif-view"></div>
 
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
     <script src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
 
 </html>
