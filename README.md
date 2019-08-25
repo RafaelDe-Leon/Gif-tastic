@@ -6,12 +6,9 @@ The Game is a Trivia Game! Test your knowledge!
 
 click (https://rafaelde-leon.github.io/Gif-tastic/) to see the gifs.
 
-##The Way it was built
+##The Way it was built using Giphy API
 
-* Giphy API
-
-- API was used to get asynchronous results and showing it to the page when the user clicks on the button
-
+* API was used to get asynchronous results and showing it to the page when the user clicks on the button
 
 ##Built Using
 * HTML5

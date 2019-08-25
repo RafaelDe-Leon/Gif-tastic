@@ -1,9 +1,11 @@
+//on load do this
 $(document).ready(function() {
-  // var that holds preloaded Gifs array
+  
   renderButtons(gifArray, "searchButton margin-control", "#create-button");
   console.log("Page has Loaded");
 });
 
+// var that holds preloaded Gifs array
 var gifArray = [
   "Naruto",
   "Dragon Ball Z",
