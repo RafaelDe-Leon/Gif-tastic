@@ -1,2 +1,22 @@
 # Gif-tastic
-Gif Tastic
+
+This game is a homework assigment for Columbia University Bootcamp.
+
+The Game is a Trivia Game! Test your knowledge!
+
+click (https://rafaelde-leon.github.io/Gif-tastic/) to see the gifs.
+
+##The Way it was built
+
+* Giphy API
+
+- API was used to get asynchronous results and showing it to the page when the user clicks on the button
+
+
+##Built Using
+* HTML5
+* CSS3
+* Bootstrap
+* jQuery
+* Ajax Call
+* Giphy API
