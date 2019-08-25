@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -12,17 +14,17 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container w-8">
 
         <div id="create-button"></div>
         <!-- this form is where the user will input stuff about the data to search -->
-        <form id="gif-form">
+        <form id="gif-search">
 
-            <label for="gif-input"> Click to Add Gif</label>
+            <label for="gif-input"> Click to add more Gifs</label>
             <input type="text" id="gif-input"><br>
 
             <!-- This button will trigger our AJAX call -->
-            <input id="find-gif" type="submit" value="Gif Search">
+            <input id="newButton" type="submit" value="submit">
 
         </form>
 
@@ -33,7 +35,8 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
 
 </body>
