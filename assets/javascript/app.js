@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // target the button id #gif-find and make a AJAX call
     // $(document).ready(function() {
+
+    //click event for adding buttons when gif input is pressed
+
     $("#find-gif").on("click", function(event) {
         // stops submit button from trying to submit a form when clicked
         event.preventDefault();
@@ -28,14 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }).then(function(response) {
             console.log(response.data);
 
-            var imageURL = images.fixed + height_still;
-            var ratingGrab = response.data.rating;
-
-            for (var i = 0; i < response.data.length; i++) {
-                $("#gif-view").preppend("<img src='" + response.data[i].response.data.imageURL + "'>");
-
-
-            }
+           
 
         });
 
@@ -67,6 +63,23 @@ function renderButtons() {
     }
 }
 
+
+function divInput() {
+
+  $("#gif-dump").on("click", function(){
+    event.preventDefault();
+
+    var imageURL = images.fixed_height_still;
+    var ratingGrab = response.data.rating;
+
+    for (var i = 0; i < response.data.length; i++) {
+        $("#gif-view").preppend("<img src= '" + response.data[i].response.data.imageURL + "'>");
+
+  
+
+    }
+  })
+}
 
 // calling the renderButtons function to display the itinial buttons
 renderButtons();
