@@ -2,8 +2,6 @@
 
 This game is a homework assigment for Columbia University Bootcamp.
 
-The Game is a Trivia Game! Test your knowledge!
-
 click (https://rafaelde-leon.github.io/Gif-tastic/) to see the gifs.
 
 ##The Way it was built using Giphy API
