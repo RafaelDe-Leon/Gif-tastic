@@ -5,6 +5,9 @@ body {
 .margin-control {
     margin-top: 20px;
 }
+.background-color {
+    background-color: lightgrey;
+}
 #search-item {
     float: left;
     padding: 10px;
@@ -30,7 +33,7 @@ input [type = "text"] {
 }
 
 button, input [type = "submit"] {
-    background: #659A98;
+    background: #e62c2c;
     color: #ffffff;
     border: 0;
     border-radius: 5px;
@@ -43,12 +46,12 @@ button, input [type = "submit"] {
 
 button:hover,
 input[type="submit"]:hover {
-    background: #334E4D;
+    background: #ce97a2;
 
 }
 
 button.active   {
-    background: #334E4D;
+    background: #e62c2c;
 }
 
 .gif {

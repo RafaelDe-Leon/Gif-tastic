@@ -4,7 +4,18 @@ $(document).ready(function() {
   console.log("Page has Loaded");
 });
 
-var gifArray = ["Naruto", "Dragon Ball Z", "FullMetal Alchemist"];
+var gifArray = [
+  "Naruto",
+  "Dragon Ball Z",
+  "FullMetal Alchemist",
+  "Sailormoon",
+  "One Piece",
+  "One Punch Man",
+  "My Hero Academia",
+  "Bleach",
+  " Yu-Yu-Hakusho",
+  "Sword Art Online"
+];
 
 function renderButtons(gifArray, classToAdd, areaToAddTo) {
   // deleting the button prior to adding new gif
@@ -71,17 +82,22 @@ $(document).on("click", ".searchButton", function() {
 });
 
 $(document).on("click", ".searchImage", function() {
+  //var that reads the data state
   var state = $(this).attr("data-state");
+  //if the state equals still do this
   if (state == "still") {
     $(this).attr("src", $(this).data("animated"));
     $(this).attr("data-state", "animated");
+    // if else do this
   } else {
     $(this).attr("src", $(this).data("still"));
     $(this).attr("data-state", "still");
   }
 });
 
+//adds a button whenever the submit button is pressed
 $("#newButton").on("click", function() {
+  //prevents the button from reloading the page
   event.preventDefault();
 
   var newSearch = $("input")
@@ -90,44 +106,3 @@ $("#newButton").on("click", function() {
   gifArray.push(newSearch);
   renderButtons(gifArray, "searchButton margin-control", "#create-button");
 });
-
-//   function divDump() {
-//     $("#gif-dump").on("click", function() {
-
-//       var imageURL = images.fixed_height_still;
-//       var ratingGrab = response.data.rating;
-
-//       for (var i = 0; i < response.data.length; i++) {
-//         $("#gif-view").preppend(
-//           "<img src= '" + response.data[i].response.data.imageURL + "'>"
-//         );
-//       }
-//     });
-//   }
-
-//   divDump();
-
-//   // calling the renderButtons function to display the itinial buttons
-//   renderButtons();
-// };
-
-//   //click event for adding buttons when gif input is pressed
-
-//   $("#gif-submit").on("click", function(event) {
-//     // stops submit button from trying to submit a form when clicked
-//     event.preventDefault();
-
-//     var gif = $("#gif-input")
-//       .val()
-//       .trim();
-
-//     // grab the url from giphy
-//
-
-//
-//     // here we grab the text inside the input box
-//     // gifArray.push(gif);
-//     // console.log(queryURL);
-
-//     // call renderButtons function
-//     renderButtons();
